@@ -8,7 +8,7 @@ services:
     plan: free
     branch: main
     healthCheckPath: /actuator/health
-    dockerCommand: java -Dserver.port=$PORT -jar app.jar
+    dockerCommand: java -jar app.jar
     envVars:
       - key: PORT
-        value: 8080
+        sync: false  # This allows Render to dynamically assign the port
