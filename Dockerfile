@@ -9,7 +9,6 @@ RUN ./gradlew clean build -x test
 FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
 COPY --from=build /home/app/build/libs/*.jar app.jar
-
-# Don't set a fixed PORT environment variable
-EXPOSE 8080
-CMD java -jar app.jar
+ENV PORT=8080
+EXPOSE ${PORT}
+CMD ["sh", "-c", "java -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom -jar app.jar"]
