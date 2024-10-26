@@ -10,5 +10,5 @@ FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
 COPY --from=build /home/app/build/libs/*.jar app.jar
 ENV PORT=8080
-EXPOSE ${PORT}
-ENTRYPOINT ["java", "-Dserver.port=${PORT}", "-jar", "app.jar"]
+EXPOSE 8080
+CMD ["sh", "-c", "java -Dserver.port=$PORT -jar app.jar"]
