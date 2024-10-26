@@ -15,6 +15,12 @@ public class DashboardController {
     private static final String SPREADSHEET_ID = "1MfzpDPOMSNx-2tuBostivQNNikezzxhnN1LdzrlbHWI";
     private static final String RANGE = "Sheet1!A2:C";  // Adjust based on where you want to add data
 
+    @GetMapping("/check")
+    public String check()
+    {
+        return "Checked";
+    }
+
     @PostMapping("/addRow")
     public String addRow(@RequestBody UserData userData) {
         try {
