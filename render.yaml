@@ -8,7 +8,7 @@ services:
     plan: free
     branch: main
     healthCheckPath: /actuator/health
-    dockerCommand: java -jar app.jar
+    dockerCommand: java -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom -jar app.jar
     envVars:
-      - key: PORT
-        sync: false  # This allows Render to dynamically assign the port
+      - key: JAVA_TOOL_OPTIONS
+        value: "-Xmx512m"
