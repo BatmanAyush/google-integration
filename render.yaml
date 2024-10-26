@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: google-sheets-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /actuator/health
+    buildCommand: docker build -t google-sheets-api .
+    startCommand: docker run -p $PORT:8080 google-sheets-api
+    envVars:
+      - key: PORT
+        value: 8080
