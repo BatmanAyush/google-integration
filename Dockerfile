@@ -9,6 +9,7 @@ RUN ./gradlew clean build -x test
 FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
 COPY --from=build /home/app/build/libs/*.jar app.jar
-ENV PORT=8080
+
+# Don't set a fixed PORT environment variable
 EXPOSE 8080
-CMD ["sh", "-c", "java -Dserver.port=$PORT -jar app.jar"]
+CMD java -jar app.jar
