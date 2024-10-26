@@ -8,10 +8,8 @@ RUN ./gradlew clean build -x test
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /home/app/build/libs/*.jar googleSheetsAPI.jar
 
-# Set the Java tool options to bind the application to the dynamic port provided by Render
+ENV PORT=8080
 ENV JAVA_TOOL_OPTIONS="-Dserver.port=${PORT}"
 
-# Expose the port for local testing purposes
-EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "googleSheetsAPI.jar"]
