@@ -29,6 +29,8 @@ public class DashboardController {
                     Arrays.asList(userData.getName(), userData.getEmail(), userData.getPhone())
             );
 
+            System.out.println(userData);
+
             // Call GoogleApiUtil to append the data
             GoogleApiUtil.appendData(SPREADSHEET_ID, RANGE, values);
 
