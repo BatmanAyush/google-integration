@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ivory-program-439802-u3",
+  "private_key_id": "b8a2ac00b80fd26213eacb0c67ea5e19b30ede7e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCEeOTChNJkJ+7Z\nPuhaCVAqpKXWE5lkko2zLpH6MrhD5787xX6ce4LziSr2+RxKFZzSBrkz7qwPGkeM\n21zjTIIDkEJopl3DHJsf3EOUy4wB6UhXGQxU7ibBKsC3Fi1PBPpak43HJLStfzaG\n0ZHzjb8gASyrUK3Tk7XGPidifMQgizOWHgdy5oEkuJP1gJM2yzabD5ukDSMGzUay\nWT1tGh+gmtYeE8EzDtSXBke4CLwoFtZXHI1OQx5yOhm9CVUerYPoE4H0xtVC5LVs\nVHMvkn/3a2ZadxsVpP2WH+9pbq2En9yQeXp256JZdZDRHvtCf2mnoHUMSIsDKTIS\nVYDU9OKVAgMBAAECggEAEHnUwdixLiHFVCG91kzoOpWFxq1jW53an9l/8GVUg6WU\nJEP47k9yRwXdYSA0g4ZSndCWQj5CChLTqVIzKFYAqZ7Mk6V1benl5T2I7j2uqSIx\njBuibAG+sjG2DE9mzTgqRw+pB4aqLhXvWy8/ftI3XiynOJttMy5g4koird4kqoNX\n1TfuEhDU48/70f4b8TGe9WbV+yaHgSO9T0VuflSL0ERH6iTiyUpd4TQi2H1EDIz3\nvtUnt3qGq4r9KrAhaG0s3l4+EjQQTxjQAmisTlsyMaH0y0I/PedyckmlK3uP+A0Z\nTIE4ldw3rrnWPiJNT0HrFHyGcHZn/fFSJIdHOd204QKBgQC4n3I4NcTYvJZ5x308\nDN5miw+1mBlwACLdtYkJNA30k+0HoUvvbZ/16xHuF/VNpieV3UfNqpNagI4GC/TS\nTNJmqUAvhFfNGG/6MpaQNCjxk34DiP9Yvi94os4ZiGkXYD8RgafO/fg24A8cu7OQ\nT+0vd3gXuEc18Bc3Zch/dMxOeQKBgQC3r/sij+yErTObi/REX2za5bNY5ziOAeJV\nCyyslSnf9ff0CX2zXQ/rqAcxX3/NDIiytcpd8XFy6UwTAsrTpPTr81Gw1c/YG5i4\nfHXpCvFwFnjyN3ohYAL3YAxpRNefo6NNeRWp3jrHsABBZLSlOMJVH24XQlPrQLHu\n7rZoYvy9/QKBgCro5CMsXBQDwPWM6A6M7yPmLkCGmWLupSvihXceIiA2QWEEnCGJ\n2SPO/tvXtavWclzikU2714OxXVEKdlxqfnxd2g0xNTb19xCvsU7S0LFVFnS74p09\nlsrzC/PjQImuVPo8qEPzwzz91oVXGuTvrrDZk4/vxJ1EsCCwB2mYO+QBAoGAVfH5\nR0qgF9QSeY0aVYNwo1smd0p4o7kt9SytUnLYjPnBcmWecvXwJQsRkoBkg8SBkVyN\nuzblJicSeTKtRCnCj0PhzSO9hBgldOyHHusH3LInFO3wLv2FZcmDBR445XDjT7R/\n9mMMjbJD7FT6UPQluT5jfG6EZWZ32pvGrUDjkOECgYB22/Z6ghgaCh4e7ZcGA+nY\nlQOZAGG+gBikICWDAx47W28TtCDBM3RsSEbVjHC8vQv0sdY6ZF6B/Uqelg54a8+K\nC7e634NEp10PER2kpHoysyDcWjXQC8V3R8ax2AwsjSdWWk74zVsFSrFB5TadAOq8\nCuGhvx/EgGtNtb9UwmhJpQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "google-sheets-integration@ivory-program-439802-u3.iam.gserviceaccount.com",
+  "client_id": "105857310467875571528",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/google-sheets-integration%40ivory-program-439802-u3.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
