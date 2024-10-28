@@ -1,0 +1,14 @@
+version: 1
+services:
+  - type: web
+    name: google-sheets-api
+    runtime: docker
+    repo: https://github.com/BatmanAyush/google-integration
+    region: oregon
+    plan: free
+    branch: main
+    healthCheckPath: /actuator/health
+    dockerCommand: java -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom -jar app.jar
+    envVars:
+      - key: JAVA_TOOL_OPTIONS
+        value: "-Xmx512m"
