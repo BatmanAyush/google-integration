@@ -12,8 +12,14 @@ WORKDIR /app
 # Copy the WAR file from the build stage to the app directory
 COPY --from=build /home/app/build/libs/*.war app.war
 
+# Copy the Google credentials JSON file from the resources folder into the container
+COPY --from=build /home/app/src/main/resources/ivory-program-439802-u3-1e79862d03dc.json /app/ivory-program-439802-u3-1e79862d03dc.json
+
+# Set environment variable for Google Application Credentials
+ENV GOOGLE_APPLICATION_CREDENTIALS="/app/ivory-program-439802-u3-1e79862d03dc.json"
+
 ENV PORT=8080
 EXPOSE ${PORT}
 
-# Run the WAR file using the embedded Tomcat or Spring Boot's servlet engine
-CMD ["sh", "-c", "java -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Djava.security.egd=file:/dev/./urandom -jar app.war"]
+# Run the WAR file using Spring Boot's embedded Tomcat engine
+CMD ["sh", "-c", "java -XX:+UseContainerSupport -XX:MaxRAMPercentage=75.0 -Dserver.port=${PORT} -Djava.security.egd=file:/dev/./urandom -jar app.war"]
