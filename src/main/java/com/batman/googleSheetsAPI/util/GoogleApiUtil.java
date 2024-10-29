@@ -36,11 +36,11 @@ public class GoogleApiUtil {
         if (sheetsService == null) {
             // Load the JSON key from the resources directory
             InputStream in = GoogleApiUtil.class.getClassLoader()
-                    .getResourceAsStream("ivory-program-439802-u3-b8a2ac00b80f.json");
+                    .getResourceAsStream("ivory-program-439802-u3-1e79862d03dc.json");
 
 
             if (in == null) {
-                throw new IOException("Resource not found: ivory-program-439802-u3-b8a2ac00b80f.json");
+                throw new IOException("Resource not found: ivory-program-439802-u3-1e79862d03dc.json");
             }
 
             GoogleCredentials credentials = GoogleCredentials.fromStream(in)
